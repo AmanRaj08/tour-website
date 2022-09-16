@@ -1,0 +1,9 @@
+.card{
+    height: 60vh;
+}
+@media only screen and (max-width: 990px){
+    
+    .card{
+    height: 48vh;
+}
+}

@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Water+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+.progress{
+    background: rgb(141, 141, 141);
+    height: 2px;
+    animation: load 1s ease-in-out 1 ;
+}
+@keyframes load {
+    0%{
+        width: 0;
+    }
+    50%{
+        width: 80vw;
+    }
+    100%{
+        width: 140vw;
+    }
+}
+.sidebar{
+    background-color: rgb(26, 24, 47);
+    font-family: 'Abril Fatface', cursive;
+    height: 136vh;
+    transition: transform 0.3s ease-in;
+    width: 135px;
+}
+.sidebar nav{
+padding: 15px;
+}
+.sidebar nav li{
+    list-style: none;
+    font-size: 20px;
+    padding: 30px 0;
+}
+.sidebar nav li a{
+    text-decoration: none;
+    color: rgb(89, 90, 95);
+}
+.main{
+    /* background: yellow; */
+    width: 100vw; 
+    background: rgb(5, 2, 72);
+}
+.container{
+    display: flex;
+    background: rgb(5, 2, 72);
+}
+.info{
+    /* background-color: rgb(181, 50, 181); */
+    height: 58vh;
+    width: 80vw;
+    margin: 144px auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    background: rgb(5, 2, 72);
+}
+.devinfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: rgb(5, 2, 72);
+}
+.devpic{
+    height: 40vh;
+    box-shadow: -10px -10px rgb(5, 2, 72),;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.devpic img{
+
+    border-radius: 8px;
+    height: 40vh;
+	box-shadow: 10px 10px 42px 0 rgba(0,0,0,0.75);
+     object-fit: cover;
+    transition: transform .35s ease-in-out;
+}
+.devpic:hover img{
+    transform: scale(1.25) rotate(15deg);
+}
+.hello{
+font-size: 2em;
+font-family: 'Water Brush', cursive;
+color: #595353;
+}
+.name{
+font-size: 2.8em;
+font-weight: bold;
+color: #595353;
+}
+.about{
+font-size: 2em;
+color: #595353;
+}
+.moreabout{
+    font-size: 1.5em;
+    font-family: 'Abril Fatface', cursive;
+    color: #595353;
+}
+.btn {
+  margin-top: 34px;
+  
+}
+.btn{
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: rgb(197, 196, 196);
+    background: rgb(18, 56, 94);
+    font-weight: bold;
+    font-size: 21px;
+    margin: 0 3px;
+    cursor: pointer;
+}
+.button{
+    margin: 18px -5px;
+}
+.btn:hover{
+ color: rgb(18, 56, 94);
+ background: rgb(197, 196, 196);
+}
+.btn-sm{
+    font-size: 14px;
+    padding: 10px 19px;
+    margin: 12px 0;
+}
+.contactform{
+    padding: 0 34px;
+    padding-top: 144px;
+    font-family: 'Karla', sans-serif;
+    margin: 44px 88px;
+    height: 62vh;
+}
+
+.contactform h1{
+    font-family: 'Source Code Pro', monospace;
+    color: #595353;
+    /* padding: 12px 0; */
+}
+.contactform form div{
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+    color: #595353;
+}
+.contactform form div input{
+    width: 45vw;
+    border-radius: 5px;
+    margin: 6px 0 0;
+    padding: 3px;
+    background-color: rgb(115, 114, 114);
+    border-color: #595353;
+}
+.contactform form {
+    margin: 0 40px;
+
+}
+
+#emailHelp{
+    font-size: 11px;
+    color: rgb(82, 82, 87);
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+#form-check{
+    flex-direction: row;
+
+}
+#form-check input{
+width: 30px;
+margin: 3px 0;
+}
+.blogcontainer{
+    margin: 88px;
+}
+.sidebarGo{
+    transform: translate(-430px, 0px);
+        position: absolute;
+}
+.hambur{
+    position: absolute;
+    cursor: pointer;
+    top: 10px;
+    left: 10px;
+}
+.cross{
+    margin-left: 0px;
+    margin-top: 9px;
+}
+.ham{
+    margin-top: 10px;
+}
+@media (max-width: 770px) {
+    *{
+        margin: 0;
+    }
+    .devpic img{
+        height: 30vh;
+    }
+    .devinfo{
+        font-size: 9px;
+    }
+    .intro, .contactform{
+        margin: 9px;
+    }
+
+.btn{
+    font-size: 8px;
+}
+.cross{
+    margin-left: 0px;
+}
+.sidebar{
+    width: 120px;
+    height: 118vh;
+}
+}
+.intro{
+    margin: 44px 88px;
+}
